@@ -1,0 +1,6 @@
+ktor:
+  application:
+    modules:
+      - nl.sysvion.ApplicationKt.module
+  deployment:
+    port: 80

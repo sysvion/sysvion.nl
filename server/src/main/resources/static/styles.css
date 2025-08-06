@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(18, 40, 44);
+    color: #afefff;
+    padding-left: min(15vw, 3em);
+    width: min(85vw, 33em);
+    font-size: 26px;
+    font-family: Inconsolata;
+}
+
+p,a {
+    color: #dfffff;
+}
+
+a {
+    &:hover {
+        color: #bfffff;
+        font-weight: 450 ;
+    }
+}
