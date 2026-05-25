@@ -17,6 +17,7 @@ import io.ktor.server.routing.*
 import kotlin.random.Random
 import kotlinx.html.*
 import org.jetbrains.exposed.sql.*
+import services.ros.ros
 import java.time.LocalDate
 
 fun Application.configureRouting() {
@@ -68,8 +69,6 @@ fun Application.configureRouting() {
                             }
                         }
 
-
-
                     }
 
                 }
@@ -81,6 +80,10 @@ fun Application.configureRouting() {
         get("/date") {
             val date = LocalDate.now().toString()
             call.respondText(date)
+        }
+
+        route("/ros2-tutorial") {
+            ros()
         }
 
         staticResources("/static","static")
