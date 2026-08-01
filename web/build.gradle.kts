@@ -7,7 +7,7 @@ val ktor_version: String by project
 val logback_version: String by project
 
 plugins {
-    kotlin("multiplatform") version "2.3.21"
+    kotlin("multiplatform") version "2.4.10"
 }
 
 kotlin {
